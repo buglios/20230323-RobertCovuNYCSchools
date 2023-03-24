@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		3AF2609229CE0C5300E41D58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2609129CE0C5300E41D58 /* AppDelegate.swift */; };
 		3AF2609429CE0C5300E41D58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2609329CE0C5300E41D58 /* SceneDelegate.swift */; };
-		3AF2609629CE0C5300E41D58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2609529CE0C5300E41D58 /* ViewController.swift */; };
-		3AF2609929CE0C5300E41D58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF2609729CE0C5300E41D58 /* Main.storyboard */; };
 		3AF2609B29CE0C5400E41D58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AF2609A29CE0C5400E41D58 /* Assets.xcassets */; };
 		3AF2609E29CE0C5400E41D58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF2609C29CE0C5400E41D58 /* LaunchScreen.storyboard */; };
 		3AF260A929CE0C5400E41D58 /* _0230323_RobertCovuNYCSchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF260A829CE0C5400E41D58 /* _0230323_RobertCovuNYCSchoolsTests.swift */; };
 		3AF260B329CE0C5400E41D58 /* _0230323_RobertCovuNYCSchoolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF260B229CE0C5400E41D58 /* _0230323_RobertCovuNYCSchoolsUITests.swift */; };
 		3AF260B529CE0C5400E41D58 /* _0230323_RobertCovuNYCSchoolsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF260B429CE0C5400E41D58 /* _0230323_RobertCovuNYCSchoolsUITestsLaunchTests.swift */; };
+		3AF260C429CE0DFF00E41D58 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF260C229CE0DFF00E41D58 /* NetworkManager.swift */; };
+		3AF260C529CE0DFF00E41D58 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF260C329CE0DFF00E41D58 /* APIEndpoint.swift */; };
+		3AF260C829CE0E5100E41D58 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF260C729CE0E5100E41D58 /* Extension.swift */; };
+		3AF260CD29CE0F4A00E41D58 /* PresentingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF260CA29CE0F4A00E41D58 /* PresentingData.swift */; };
+		3AF260CE29CE0F4A00E41D58 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF260CB29CE0F4A00E41D58 /* TableViewCell.swift */; };
+		3AF260CF29CE0F4A00E41D58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF260CC29CE0F4A00E41D58 /* ViewController.swift */; };
+		3AF260D329CE0FD000E41D58 /* SchoolsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF260D229CE0FD000E41D58 /* SchoolsModel.swift */; };
+		3AF260D529CE150300E41D58 /* ViewControllerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF260D429CE150300E41D58 /* ViewControllerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +45,6 @@
 		3AF2608E29CE0C5300E41D58 /* 20230323-RobertCovuNYCSchools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20230323-RobertCovuNYCSchools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF2609129CE0C5300E41D58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AF2609329CE0C5300E41D58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3AF2609529CE0C5300E41D58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3AF2609829CE0C5300E41D58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3AF2609A29CE0C5400E41D58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AF2609D29CE0C5400E41D58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AF2609F29CE0C5400E41D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +53,14 @@
 		3AF260AE29CE0C5400E41D58 /* 20230323-RobertCovuNYCSchoolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "20230323-RobertCovuNYCSchoolsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF260B229CE0C5400E41D58 /* _0230323_RobertCovuNYCSchoolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0230323_RobertCovuNYCSchoolsUITests.swift; sourceTree = "<group>"; };
 		3AF260B429CE0C5400E41D58 /* _0230323_RobertCovuNYCSchoolsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0230323_RobertCovuNYCSchoolsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3AF260C229CE0DFF00E41D58 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		3AF260C329CE0DFF00E41D58 /* APIEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		3AF260C729CE0E5100E41D58 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		3AF260CA29CE0F4A00E41D58 /* PresentingData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentingData.swift; sourceTree = "<group>"; };
+		3AF260CB29CE0F4A00E41D58 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		3AF260CC29CE0F4A00E41D58 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3AF260D229CE0FD000E41D58 /* SchoolsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolsModel.swift; sourceTree = "<group>"; };
+		3AF260D429CE150300E41D58 /* ViewControllerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +111,13 @@
 		3AF2609029CE0C5300E41D58 /* 20230323-RobertCovuNYCSchools */ = {
 			isa = PBXGroup;
 			children = (
+				3AF260C629CE0E3100E41D58 /* UIExtention */,
+				3AF260C129CE0C7200E41D58 /* ServiceManager */,
+				3AF260C929CE0F3400E41D58 /* View */,
+				3AF260D029CE0F7E00E41D58 /* Model */,
+				3AF260D129CE0F8E00E41D58 /* ViewModel */,
 				3AF2609129CE0C5300E41D58 /* AppDelegate.swift */,
 				3AF2609329CE0C5300E41D58 /* SceneDelegate.swift */,
-				3AF2609529CE0C5300E41D58 /* ViewController.swift */,
-				3AF2609729CE0C5300E41D58 /* Main.storyboard */,
 				3AF2609A29CE0C5400E41D58 /* Assets.xcassets */,
 				3AF2609C29CE0C5400E41D58 /* LaunchScreen.storyboard */,
 				3AF2609F29CE0C5400E41D58 /* Info.plist */,
@@ -125,6 +140,49 @@
 				3AF260B429CE0C5400E41D58 /* _0230323_RobertCovuNYCSchoolsUITestsLaunchTests.swift */,
 			);
 			path = "20230323-RobertCovuNYCSchoolsUITests";
+			sourceTree = "<group>";
+		};
+		3AF260C129CE0C7200E41D58 /* ServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				3AF260C329CE0DFF00E41D58 /* APIEndpoint.swift */,
+				3AF260C229CE0DFF00E41D58 /* NetworkManager.swift */,
+			);
+			path = ServiceManager;
+			sourceTree = "<group>";
+		};
+		3AF260C629CE0E3100E41D58 /* UIExtention */ = {
+			isa = PBXGroup;
+			children = (
+				3AF260C729CE0E5100E41D58 /* Extension.swift */,
+			);
+			path = UIExtention;
+			sourceTree = "<group>";
+		};
+		3AF260C929CE0F3400E41D58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3AF260CA29CE0F4A00E41D58 /* PresentingData.swift */,
+				3AF260CB29CE0F4A00E41D58 /* TableViewCell.swift */,
+				3AF260CC29CE0F4A00E41D58 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3AF260D029CE0F7E00E41D58 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3AF260D229CE0FD000E41D58 /* SchoolsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3AF260D129CE0F8E00E41D58 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3AF260D429CE150300E41D58 /* ViewControllerModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +291,6 @@
 			files = (
 				3AF2609E29CE0C5400E41D58 /* LaunchScreen.storyboard in Resources */,
 				3AF2609B29CE0C5400E41D58 /* Assets.xcassets in Resources */,
-				3AF2609929CE0C5300E41D58 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +315,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AF2609629CE0C5300E41D58 /* ViewController.swift in Sources */,
+				3AF260C429CE0DFF00E41D58 /* NetworkManager.swift in Sources */,
+				3AF260CE29CE0F4A00E41D58 /* TableViewCell.swift in Sources */,
+				3AF260D529CE150300E41D58 /* ViewControllerModel.swift in Sources */,
+				3AF260CF29CE0F4A00E41D58 /* ViewController.swift in Sources */,
 				3AF2609229CE0C5300E41D58 /* AppDelegate.swift in Sources */,
+				3AF260D329CE0FD000E41D58 /* SchoolsModel.swift in Sources */,
+				3AF260CD29CE0F4A00E41D58 /* PresentingData.swift in Sources */,
+				3AF260C829CE0E5100E41D58 /* Extension.swift in Sources */,
 				3AF2609429CE0C5300E41D58 /* SceneDelegate.swift in Sources */,
+				3AF260C529CE0DFF00E41D58 /* APIEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +361,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3AF2609729CE0C5300E41D58 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3AF2609829CE0C5300E41D58 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3AF2609C29CE0C5400E41D58 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -441,7 +497,6 @@
 				INFOPLIST_FILE = "20230323-RobertCovuNYCSchools/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,7 +523,6 @@
 				INFOPLIST_FILE = "20230323-RobertCovuNYCSchools/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
